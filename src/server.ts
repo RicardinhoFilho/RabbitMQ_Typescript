@@ -1,9 +1,7 @@
+
 import express from "express";
 import cors from "cors";
-import comunicacaoRoutes from "./Routes/comunicaco.routes";
-import anexoRoutes from "./Routes/anexo.routes";
-import comunicacaoCompletaRoutes from "./Routes/comunicacaoCompleta.routes";
-import indexRoutes from "./Routes/index.routes";
+
 
 const app = express();
 
@@ -18,9 +16,6 @@ app.use(
   })
 );
 
-app.use(comunicacaoRoutes);
-app.use(indexRoutes);
-app.use(anexoRoutes);
-app.use(comunicacaoCompletaRoutes);
 
-app.listen(3355, () => console.log("Server started at http://localhost:3355"));
+
+app.listen(3335, () => console.log("Server started at http://localhost:3335"));
