@@ -1,7 +1,6 @@
-
 import express from "express";
 import cors from "cors";
-
+import router from "./routes";
 
 const app = express();
 
@@ -16,6 +15,6 @@ app.use(
   })
 );
 
+app.use(router);
 
-
-app.listen(3335, () => console.log("Server started at http://localhost:3335"));
+app.listen(10000, () => console.log("Server started at http://localhost:10000"));
