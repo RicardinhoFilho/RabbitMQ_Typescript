@@ -19,7 +19,7 @@ router.post(`/`, (req, res) => {
     return res.status(200).json({
       data: req.body,
       status: true,
-      message: "Dados recebidos com sucesso",
+      message: "Dados recebidos com sucesso!",
     });
   });
 
