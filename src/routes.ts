@@ -4,7 +4,7 @@ const router = Router();
 
 
 
-router.post(`/`, (req, res) => {
+router.post(`/teste`, (req, res) => {
     return res.status(200).json({
       data: req.body,
       status: true,
