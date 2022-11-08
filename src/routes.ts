@@ -13,6 +13,7 @@ router.post(`/teste`, (req, res) => {
   });
 
   router.post(`/`, (req, res) => {
+    console.log(req.body)
     return res.status(200).json({
       data: req.body,
       status: true,
