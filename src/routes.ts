@@ -21,6 +21,15 @@ router.post(`/teste`, (req, res) => {
     });
   });
 
+  router.put(`/`, (req, res) => {
+    console.log(req.body)
+    return res.status(200).json({
+      data: req.body,
+      status: true,
+      message: "Dados recebidos com sucesso!",
+    });
+  });
+
 
   router.get(`/`, (req, res) => {
     return res.status(200).json({
